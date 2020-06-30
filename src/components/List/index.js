@@ -1,6 +1,7 @@
 import React from "react";
 import { MdAdd } from "react-icons/md";
 import { Container } from "./styled";
+import Card from "../Card";
 
 function List() {
   return (
@@ -11,6 +12,13 @@ function List() {
           <MdAdd size={24} color="#ffffff" />
         </button>
       </header>
+
+      <ul>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </ul>
     </Container>
   );
 }
