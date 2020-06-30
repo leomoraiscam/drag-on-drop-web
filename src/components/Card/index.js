@@ -10,7 +10,7 @@ function Card() {
       </header>
       <p>Fazer a migração completa de servidor</p>
       <img
-        src="https://www.flaticon.com/premium-icon/icons/svg/3000/3000288.svg "
+        src="https://api.adorable.io/avatars/239/abott@adorable.png"
         alt=""
       />
     </Container>

@@ -9,7 +9,6 @@ function Board() {
       <List />
       <List />
       <List />
-      <List />
     </Container>
   );
 }
