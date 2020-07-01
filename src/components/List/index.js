@@ -3,21 +3,22 @@ import { MdAdd } from "react-icons/md";
 import { Container } from "./styled";
 import Card from "../Card";
 
-function List() {
+function List({ data }) {
   return (
-    <Container>
+    <Container done={data.done}>
       <header>
-        <h2>Tarefas</h2>
-        <button type="button">
-          <MdAdd size={24} color="#ffffff" />
-        </button>
+        <h2>{data.title}</h2>
+        {data.creatable && (
+          <button type="button">
+            <MdAdd size={24} color="#ffffff" />
+          </button>
+        )}
       </header>
 
       <ul>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {data.cards.map((card) => (
+          <Card key={card.id} data={card} />
+        ))}
       </ul>
     </Container>
   );
