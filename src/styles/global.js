@@ -1,26 +1,26 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-  *{
+  *, html, body{
     margin: 0;
     padding: 0;
     outline: 0;
+    box-sizing: border-box;
   }
 
   html, body, #root{
     height: 100%;
   }
 
-  body{
-    font: 14px 'Roboto', sans-serif;
+  body {
+    font: 14px 'Roboto', sans-serif !important;
     background: #ecf1f8;
-    color: #333333;
     -webkit-font-smoothing: antialiased !important;
   }
 
-  ul{
+  ul {
     list-style: none;
   }
 `;

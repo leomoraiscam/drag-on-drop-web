@@ -1,13 +1,11 @@
 import React from "react";
 
-import { Container } from "./styled";
+import { Container } from "./styles";
 
-function Header() {
+export default function Header() {
   return (
-    <Container>
-      <h1>Pipefy</h1>
-    </Container>
+    <>
+      <Container>Rocketfy</Container>
+    </>
   );
 }
-
-export default Header;
