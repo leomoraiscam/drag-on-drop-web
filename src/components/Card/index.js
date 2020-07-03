@@ -20,6 +20,11 @@ export default function Card({ data, index }) {
       const targetIndex = index;
 
       if (draggedIndex === targetIndex) return;
+
+      const targetSize = ref.current.getBoundingClientRect();
+      const targetCenter = targetSize.bottom - targetSize.top / 2;
+
+      console.log(targetCenter);
     },
   });
 
