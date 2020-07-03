@@ -16,7 +16,8 @@ export default function Card({ data }) {
   const [, dropRef] = useDrop({
     accept: "CARD",
     hover(item, monitor) {
-      console.log(item.id);
+      const cardArastado = item.id;
+      const cardRecebeArraste = data.id;
     },
   });
 
