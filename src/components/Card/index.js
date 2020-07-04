@@ -23,7 +23,12 @@ export default function Card({ data, index, listIndex }) {
       const draggedIndex = item.index;
       const targetIndex = index;
 
-      if (draggedIndex === targetIndex) return;
+      if (
+        draggedIndex === targetIndex &&
+        draggedListIndex === targetListIndex
+      ) {
+        return;
+      }
 
       const targetSize = ref.current.getBoundingClientRect();
       const targetCenter = (targetSize.bottom - targetSize.top) / 2;
