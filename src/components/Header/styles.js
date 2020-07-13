@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: 0px 30px;
   font-size: 24px;
   font-weight: 700;
-  background: #7159c1;
+  background: #3b5bfd;
   color: #ffffff;
   display: flex;
   align-items: center;
